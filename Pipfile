@@ -9,6 +9,7 @@ sqlalchemy = "*"
 ipdb = "*"
 alembic = "*"
 click = "*"
+datetime = "*"
 
 [dev-packages]
 
