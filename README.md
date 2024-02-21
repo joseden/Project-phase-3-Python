@@ -1,7 +1,8 @@
 # Project-phase-3-Python
 
-# Banking System CLI
-This is a simple Command-Line Interface (CLI) application for a banking system. It allows users to perform basic banking operations such as checking balance, depositing money, and withdrawing money.
+# Banking System CLI : Synposis
+This is a simple Command-Line Interface (CLI) program for a banking system. It allows users to perform basic banking operations such as checking balance, depositing money, and withdrawing money. This program uses one to many association sql alchemy where The program ensures that when a new deposit or withdrawal is made, the account balance is automatically updated and reflects the change in real-time.
+
 
  # Requirements
 
