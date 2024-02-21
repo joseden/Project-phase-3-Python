@@ -49,6 +49,26 @@ Provide the required information such as account ID and amount.
 2. Deposit: Add money to an account.
 3. Withdraw: Remove money from an account.
 
+# Account Model:
+The Account model represents bank accounts.
+It has attributes such as id, name, balance, and password.
+The balance attribute represents the current balance of the account.
+It has a one-to-many relationship with both Deposit and Withdrawal models, which represent the transactions associated with the account.
+We've defined an event listener that triggers after an account is updated. This listener updates the amounts in the Deposit and Withdrawal tables associated with the account.
+
+# Deposit Model:
+The Deposit model represents deposits made into accounts.
+It has attributes such as deposit_id, account_id, amount, and timestamp.
+It is associated with the Account model through a foreign key relationship.
+We've defined an event listener that triggers after a deposit is inserted. This listener updates the account balance by adding the deposited amount to it.
+
+
+# Withdrawal Model:
+The Withdrawal model represents withdrawals made from accounts.
+It has attributes such as withdrawal_id, account_id, amount, and timestamp.
+It is associated with the Account model through a foreign key relationship.
+
+
 
 You can further enhance the README with additional details such as how to extend the functionality, project structure, etc., based on your requirements.
 
